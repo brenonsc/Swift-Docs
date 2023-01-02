@@ -2,13 +2,13 @@
 
 Nesse documento será armazenado os conhecimentos adquiridos no site Hacking with Swift, no proposto desafio, disponível em: https://www.hackingwithswift.com/100
 
-Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc.
+Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc. <br>
 
 ### Tipos complexos:
 
 - ### **SET**
 
-Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** `let colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.
+Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** `let colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.<br>
 
 - **TUPLES**
 
@@ -24,7 +24,7 @@ Outra forma de array, porém a tupla possui tamanho fixo e não é possível adi
 
 `name.0` ou
 
-`name.first`
+`name.first` <br>
 
 - **DICTIONARY DEFAULT**
 
@@ -34,7 +34,7 @@ O Swift por padrão ao buscar um item que não existe em um dicionário, retorna
 
 `favoriteIceCream["Charlotte", default: "Unknown"]`
 
-Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não for encontrado, é retornado “Unknown”.
+Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não for encontrado, é retornado “Unknown”. <br>
 
 - **EMPTY COLLECTIONS**
 
@@ -60,7 +60,7 @@ e posteriormente adicionar itens:
 
 3. Set
 
-`var words = Set<String>()`
+`var words = Set<String>()` <br>
 
 - ************************ENUMERATIONS************************
 
@@ -88,7 +88,7 @@ enum Result
 
 E dessa forma, quando formos representar um resultado:
 
-`let result4 = Result.failure`
+`let result4 = Result.failure` <br>
 
 - **ENUM ASSOCIATED VALUES**
 
@@ -108,7 +108,7 @@ enum Activity
 
 Assim é possível colocarmos as coisas de forma mais específica, como por exemplo, falando sobre futebol:
 
-`let talking = Activity.talking(topic: "football")`
+`let talking = Activity.talking(topic: "football")` <br>
 
 - **************************ENUM RAW VALUES**************************
 
