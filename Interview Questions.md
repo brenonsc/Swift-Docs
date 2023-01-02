@@ -20,11 +20,11 @@ Quando um aplicativo é iniciado, o primeiro método a ser chamado é: `applicat
 - `applicationDidEnterBackground`: é chamado quando o app entra em estado de segundo plano, após se tornar inativo. Você tem aproximadamente cinco segundos para executar qualquer tarefa necessária para fazer backup, caso o aplicativo seja encerrado mais tarde ou logo após isso.
 - `applicationWillTerminate`: é chamado quando o app está para ser limpo da memória do dispositivo. Dessa forma, o uso ideal é chamar qualquer método de limpeza aqui.
 
-Tanto o método `willFinishLaunchingWithOptions` quanto o `didFinishLaunchingWithOptions` servem para identificar se seu app é capaz de enviar notificações por push ou através de um link da web. Caso seja, é necessário retornar ` true`. <br><br><br>
+Tanto o método `willFinishLaunchingWithOptions` quanto o `didFinishLaunchingWithOptions` servem para identificar se seu app é capaz de enviar notificações por push ou através de um link da web. Caso seja, é necessário retornar ` true`. <br><br>
 
 ### 2. Qual a diferença do Swift para o Objective-C?
 
-Ambas as linguagens foram feitas para o desenvolvimento para iOS, no entanto, o Objective-C é considerado ultrapassado e antigo, uma vez que o Swift veio para substituí-lo. Atualmente, aprender Objective-C é um diferencial e provavelmente não se fará necessário, uma vez que a enorme maioria das bibliotecas já foram portadas pra Swift e o que poderia utilizar-se dela seria uma possível tradução para a linguagem mais nova. <br><br><br>
+Ambas as linguagens foram feitas para o desenvolvimento para iOS, no entanto, o Objective-C é considerado ultrapassado e antigo, uma vez que o Swift veio para substituí-lo. Atualmente, aprender Objective-C é um diferencial e provavelmente não se fará necessário, uma vez que a enorme maioria das bibliotecas já foram portadas pra Swift e o que poderia utilizar-se dela seria uma possível tradução para a linguagem mais nova. <br><br>
 
 ### 3. Qual é a arquitetura do iOS?
 
@@ -40,8 +40,8 @@ Suas camadas são organizadas da seguinte maneira:
 | [**Core Services**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreServicesLayer/CoreServicesLayer.html#:~:text=The%20technologies%20in%20the%20Core,on%20the%20app's%20user%20interface.) |
 | [**Core OS**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html) | 
 
-<br><br><br>
+<br><br>
 ### 4. Qual a diferença entre *await* e *async let*?
 
 Ambos são formas de executar operações assíncronas, mas trabalham de forma diferente. Quando utilizamos o *await*, o programa aguarda obter um certo resultado para continuar, enquanto o *async let*, não.
-Dessa forma, quando for necessário a obtenção de um resultado que será utilizada logo em seguida para a próxima operação, é utilizada a primeira expressão e quando não há necessidade, a segunda.<br><br><br>
+Dessa forma, quando for necessário a obtenção de um resultado que será utilizada logo em seguida para a próxima operação, é utilizada a primeira expressão e quando não há necessidade, a segunda.<br><br>
