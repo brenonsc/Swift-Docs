@@ -2,15 +2,15 @@
 
 Nesse documento será armazenado os conhecimentos adquiridos no site Hacking with Swift, no proposto desafio, disponível em: https://www.hackingwithswift.com/100
 
-Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc. <br>
+Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc. <br><br>
 
-### Tipos complexos:
+## Tipos complexos:
 
 - ### **SET**
 
-Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** `let colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.<br>
+Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** `let colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.<br><br>
 
-- **TUPLES**
+- ### **TUPLES**
 
 Outra forma de array, porém a tupla possui tamanho fixo e não é possível adicionar ou excluir itens nela ou mudar seu tipo de dado.
 
@@ -24,9 +24,9 @@ Outra forma de array, porém a tupla possui tamanho fixo e não é possível adi
 
 `name.0` ou
 
-`name.first` <br>
+`name.first` <br><br>
 
-- **DICTIONARY DEFAULT**
+- ### **DICTIONARY DEFAULT**
 
 O Swift por padrão ao buscar um item que não existe em um dicionário, retorna `nil`, mas é possível adicionar uma resposta automática ao se buscar um item que não existe.
 
@@ -34,13 +34,13 @@ O Swift por padrão ao buscar um item que não existe em um dicionário, retorna
 
 `favoriteIceCream["Charlotte", default: "Unknown"]`
 
-Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não for encontrado, é retornado “Unknown”. <br>
+Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não for encontrado, é retornado “Unknown”. <br><br>
 
-- **EMPTY COLLECTIONS**
+- ### **EMPTY COLLECTIONS**
 
 É possível criar coleções vazias, para serem preenchidas posteriormente pelo programa.
 
-******************Sintaxe:******************
+**Sintaxe:**
 
 1. Dictionary
 
@@ -60,13 +60,13 @@ e posteriormente adicionar itens:
 
 3. Set
 
-`var words = Set<String>()` <br>
+`var words = Set<String>()` <br><br>
 
-- ************************ENUMERATIONS************************
+- ### **ENUMERATIONS**
 
 Enumeration é uma forma de definir um grupo de resultados relacionados de forma a deixá-los mais fácil de serem usados. Dessa forma, não há o risco de se ter um resultado inesperado, com formas diferentes de se dizer a mesma coisa.
 
-************************************Exemplo sem enums:************************************
+**Exemplo sem enums:**
 
 `let result = "failure"`
 
@@ -76,7 +76,7 @@ Enumeration é uma forma de definir um grupo de resultados relacionados de forma
 
 Como mostrado, os 3 resultados são os mesmos, porém, descritos de forma diferente. Para resolver isso, podemos utilizar as enumerations.
 
-****************Sintaxe:****************
+**Sintaxe:**
 
 ```swift
 enum Result 
@@ -88,13 +88,13 @@ enum Result
 
 E dessa forma, quando formos representar um resultado:
 
-`let result4 = Result.failure` <br>
+`let result4 = Result.failure` <br><br>
 
-- **ENUM ASSOCIATED VALUES**
+- ### **ENUM ASSOCIATED VALUES**
 
 Assim como enums podem armazenar tipos simples de dados, os mesmos podem também mostrar dados de forma associada. Dessa forma, é possível colocar um valor, e o que se associa a ele.
 
-******************Sintaxe:******************
+**Sintaxe:**
 
 ```swift
 enum Activity 
@@ -108,13 +108,13 @@ enum Activity
 
 Assim é possível colocarmos as coisas de forma mais específica, como por exemplo, falando sobre futebol:
 
-`let talking = Activity.talking(topic: "football")` <br>
+`let talking = Activity.talking(topic: "football")` <br><br>
 
-- **************************ENUM RAW VALUES**************************
+- ### **ENUM RAW VALUES**
 
 É possível também acessar um dado de enum pela posição dele na estrutura. Nesse caso, é necessário fazer a associação a um número inteiro na declaração, e contar os dados iniciando de 0, assim como um vetor.
 
-************Sintaxe:************
+**Sintaxe:**
 
 ```swift
 enum Planet: Int 
@@ -142,4 +142,4 @@ enum Planet: Int
 }
 ```
 
-Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3.
+Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3. <br><br>
