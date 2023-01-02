@@ -6,9 +6,9 @@ Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo 
 
 ### Tipos complexos:
 
-- **SET**
+- ### **SET**
 
-Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** **`let** colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.
+Espécie de array, mas desordenado e que não permite itens duplicados. **Sintaxe:** `let colors = Set(["red", "green", "blue"])`. Usado especialmente em situações onde é necessário buscar um item na coleção, que é encontrado de forma muito mais rápida que em um array.
 
 - **TUPLES**
 
@@ -18,7 +18,7 @@ Outra forma de array, porém a tupla possui tamanho fixo e não é possível adi
 
 1. Para criar a tupla
 
-**`var** name = (first: "Taylor", last: "Swift")`
+`var name = (first: "Taylor", last: "Swift")`
 
 2. Para acessar dados
 
@@ -32,11 +32,11 @@ O Swift por padrão ao buscar um item que não existe em um dicionário, retorna
 
 **Sintaxe:**
 
-`favoriteIceCream["Charlotte", **default**: "Unknown"]`
+`favoriteIceCream["Charlotte", default: "Unknown"]`
 
 Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não for encontrado, é retornado “Unknown”.
 
-- **********************************EMPTY COLLECTIONS**********************************
+- **EMPTY COLLECTIONS**
 
 É possível criar coleções vazias, para serem preenchidas posteriormente pelo programa.
 
@@ -44,23 +44,23 @@ Nesse caso, é buscado o item “Charlotte” no dicionário, e se o mesmo não 
 
 1. Dictionary
 
-**`var** teams = [String: String]()` ou
+`var teams = [String: String]()` ou
 
-**`var** scores = Dictionary<String, Int>()`
+`var scores = Dictionary<String, Int>()`
 
 e posteriormente adicionar itens:
 
 `teams["Paul"] = "Red"`
 
-1. Array
+2. Array
 
-**`var** results = [Int]()` ou
+`var results = [Int]()` ou
 
-**`var** results = Array<Int>()`
+`var results = Array<Int>()`
 
-1. Set
+3. Set
 
-**`var** words = Set<String>()`
+`var words = Set<String>()`
 
 - ************************ENUMERATIONS************************
 
@@ -68,11 +68,11 @@ Enumeration é uma forma de definir um grupo de resultados relacionados de forma
 
 ************************************Exemplo sem enums:************************************
 
-**`let** result = "failure"`
+`let result = "failure"`
 
-**`let** result2 = "failed"`
+`let result2 = "failed"`
 
-**`let** result3 = "fail"`
+`let result3 = "fail"`
 
 Como mostrado, os 3 resultados são os mesmos, porém, descritos de forma diferente. Para resolver isso, podemos utilizar as enumerations.
 
@@ -88,7 +88,7 @@ enum Result
 
 E dessa forma, quando formos representar um resultado:
 
-**`let** result4 = Result.failure`
+`let result4 = Result.failure`
 
 - **ENUM ASSOCIATED VALUES**
 
@@ -108,7 +108,7 @@ enum Activity
 
 Assim é possível colocarmos as coisas de forma mais específica, como por exemplo, falando sobre futebol:
 
-**`let** talking = Activity.talking(topic: "football")`
+`let talking = Activity.talking(topic: "football")`
 
 - **************************ENUM RAW VALUES**************************
 
@@ -128,7 +128,7 @@ enum Planet: Int
 
 Nesse caso, Mercúrio 0, Vênus 1, Terra 2, Marte 3, então, para termos o valor da Terra, acessamos dessa forma:
 
-**`let** earth = Planet(rawValue: 2)`
+`let earth = Planet(rawValue: 2)`
 
 Porém, como esse enum trata-se de planetas, não é muito natural pensarmos que a Terra é o planeta número 2, sendo assim, podemos resolver dessa forma:
 
