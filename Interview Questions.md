@@ -38,7 +38,9 @@ Suas camadas são organizadas da seguinte maneira:
 | :----------------------------------------------------------: |
 | [**Media Layer**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/MediaLayer/MediaLayer.html#//apple_ref/doc/uid/TP40001067-CH273-SW1) |
 | [**Core Services**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreServicesLayer/CoreServicesLayer.html#:~:text=The%20technologies%20in%20the%20Core,on%20the%20app's%20user%20interface.) |
-| [**Core OS**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html) | <br><br><br>
+| [**Core OS**](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CoreOSLayer/CoreOSLayer.html) | 
+
+<br><br><br>
 ### 4. Qual a diferença entre *await* e *async let*?
 
 Ambos são formas de executar operações assíncronas, mas trabalham de forma diferente. Quando utilizamos o *await*, o programa aguarda obter um certo resultado para continuar, enquanto o *async let*, não.
