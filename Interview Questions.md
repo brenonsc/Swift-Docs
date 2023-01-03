@@ -1,4 +1,4 @@
-## Interview Questions 📝
+# Interview Questions 📝
 
 Nesse documento será armazenado perguntas comuns utilizadas em entrevistas para desenvolvedores iOS, totalmente em português. A ideia é adicionar uma ou mais perguntas por dia, até ter respondido todas as perguntas propostas.<br><br><br>
 
@@ -45,3 +45,84 @@ Suas camadas são organizadas da seguinte maneira:
 
 Ambos são formas de executar operações assíncronas, mas trabalham de forma diferente. Quando utilizamos o *await*, o programa aguarda obter um certo resultado para continuar, enquanto o *async let*, não.
 Dessa forma, quando for necessário a obtenção de um resultado que será utilizada logo em seguida para a próxima operação, é utilizada a primeira expressão e quando não há necessidade, a segunda.<br><br>
+
+### 5. Qual a diferença entre Abstração e Encapsulamento?
+
+Tanto abstração quanto encapsulamento são conceitos usados em **Programação Orientada a Objetos** (**POO**). A abstração se refere à parte de criação de uma classe, ou seja, um molde para criação de objetos, baseado em algo do mundo real, com seus respectivos atributos e métodos. Por padrão, os atributos da classe podem ser acessados de forma aberta publicamente, e é aí que entra o encapsulamento. Para realizá-lo, tornamos os atributos privados, e criamos métodos para acessá-los, de forma que só é possível acessar o que definimos no método, dentro da própria classe, e não fora dela.<br><br>
+
+### 6. Qual a diferença entre *struct* e *class*? Cite um exemplo do mundo real e coloque o código para mostrar a diferença
+
+Tanto a classe quanto a *struct* são formas de abstração. Suas diferenças:
+
+- A classe permite herança de métodos e atributos de outras classes, a *struct* não;
+- Classes possuem o conceito de "desinicializadores", utilizando o método `deinit()`. Dentro desse método, há um código que é executado quando uma instância de uma classe é destruída;
+- As classes também podem ter uma ou mais referências para uma única instância.
+
+Essa última, já citando um exemplo do mundo real também, podemos criar um objeto, definindo seus atributos. Feito isso, criamos um segundo objeto, igualando ele ao primeiro, para que ambos tenham os mesmos atributos, e logo após, alterarmos apenas um atributo do primeiro objeto. Posteriormente, se mandarmos o programa printar esse atributo alterado dos dois objetos, temos resultados diferentes, dependendo do tipo de abstração utilizado. 
+
+Caso seja uma *struct*, os atributos serão exibidos da forma que queremos, como pedimos que o programa fizesse. 
+
+**Código:**
+
+```swift
+struct Cachorro
+{  
+	var nome: String  
+  var cor: String  
+  var idade: Int   
+  
+  init(nome: String, cor: String, idade: Int) 
+  {    
+    self.nome = nome    
+    self.cor = cor   
+    self.idade = idade  
+  }
+}
+
+var cachorro1 = Cachorro.init(nome: "Pituca", cor: "Preto", idade: 7) 
+var cachorro2 = cachorro1
+cachorro1.nome = "Bombom" 
+
+print(cachorro1.nome) // Bombom
+print(cachorro2.nome) // Pituca
+```
+
+Já se for uma classe, teremos os dois atributos com o exato mesmo valor que gostaríamos de ter alterado apenas para o primeiro objeto.
+
+**Código:**
+
+```swift
+struct Cachorro
+{  
+	var nome: String  
+  var cor: String  
+  var idade: Int   
+
+  init(nome: String, cor: String, idade: Int) 
+  {    
+    self.nome = nome    
+    self.cor = cor   
+    self.idade = idade  
+  }
+}
+
+var cachorro1 = Cachorro.init(nome: "Pituca", cor: "Preto", idade: 7) 
+var cachorro2 = cachorro1
+cachorro1.nome = "Bombom" 
+
+print(cachorro1.nome) // Bombom
+print(cachorro2.nome) // Bombom
+```
+
+ Isso acontece pois ao igualarmos os objetos, os mesmos ficam associados por referência, então quando tentamos acessar um método associado, ele é alterado para todas os objetos referenciados.<br><br>
+
+### 7. O que é a View Lifecycle?
+
+View Lifecycle é basicamente o que o próprio nome diz, o ciclo de vida de uma View (ou tela) no iOS, que inclui métodos para fazer a View aparecer, alterar o estado dela quando for desaparecer, etc.
+
+**Diagrama do View Lifecycle:**
+
+![](https://miro.medium.com/max/1400/1*jb1Y17gwQCRi2XCKy7_QHQ.png)
+
+<br><br>
+
