@@ -143,3 +143,55 @@ enum Planet: Int
 ```
 
 Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3. <br><br>
+
+- **TERNARY OPERATORS**
+
+O Swift tem um operador raramente usado que chamamos de operador ternário. Com ele, se torna possível verificar um valor e retornar uma resposta de forma simples e rápida, sem necessidade de criar um if somente pra isso.
+
+**Sintaxe:**
+
+```swift
+let firstCard = 11
+let secondCard = 10
+print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
+```
+
+Nesse caso, temos um print com uma condição para escrever dada a condição de a variável *firstCard* ser igual à *secondCard*. Caso sim, é printado "Cards are the same", senão "Cards are different". Isso é o mesmo que digitar o seguinte código:
+
+```swift
+if firstCard == secondCard 
+{
+    print("Cards are the same")
+} 
+else 
+{
+    print("Cards are different")
+}
+```
+
+Concluindo, o operador torna comparações simples mais fáceis e compactas. <br><br>
+
+- **RANGE OPERATORS**
+
+Os operadores de alcance são dois: **...** e **..<**
+
+O primeiro, identifica o alcance incluindo o último valor descrito, enquanto o segundo deixa o mesmo de fora.
+
+**Sintaxe:**
+
+```swift
+let score = 85
+
+switch score 
+{
+  case 0...49:
+      print("You failed badly.")
+  case 50..<85:
+      print("You did OK.")
+  default:
+      print("You did great!")
+}
+```
+
+Nesse código, podemos ver os dois casos. No primeiro, é printado "You failed badly." se a *score* for entre 0 e 49, "You did OK.", se o número for entre 50 e 84 (nota-se que o 85 não entra no alcance devido ao operador) e "You did great!", que é o caso de ser maior que 84, o que seria o resultado do código cima se executado. <br><br>
+
