@@ -144,7 +144,7 @@ enum Planet: Int
 
 Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3. <br><br>
 
-- **TERNARY OPERATORS**
+- ### **TERNARY OPERATORS**
 
 O Swift tem um operador raramente usado que chamamos de operador ternário. Com ele, se torna possível verificar um valor e retornar uma resposta de forma simples e rápida, sem necessidade de criar um if somente pra isso.
 
@@ -171,7 +171,7 @@ else
 
 Concluindo, o operador torna comparações simples mais fáceis e compactas. <br><br>
 
-- **RANGE OPERATORS**
+- ### **RANGE OPERATORS**
 
 Os operadores de alcance são dois: **...** e **..<**
 
