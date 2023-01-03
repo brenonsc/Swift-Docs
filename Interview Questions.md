@@ -1,6 +1,6 @@
 # Interview Questions 📝
 
-Nesse documento será armazenado perguntas comuns utilizadas em entrevistas para desenvolvedores iOS, totalmente em português. A ideia é adicionar uma ou mais perguntas por dia, até ter respondido todas as perguntas propostas.<br><br><br>
+Nesse documento será armazenado perguntas comuns utilizadas em entrevistas para desenvolvedores iOS, totalmente em português. A ideia é adicionar uma ou mais perguntas por dia, até ter respondido todas as perguntas propostas.<br><br>
 
 ### 1. O que é o App Delegate Life Cycle?
 
