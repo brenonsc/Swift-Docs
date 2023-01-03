@@ -4,7 +4,7 @@ Nesse documento será armazenado os conhecimentos adquiridos no site Hacking wit
 
 Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc. <br><br>
 
-## Tipos complexos:
+## TIPOS COMPLEXOS:
 
 - ### **SET**
 
@@ -142,9 +142,9 @@ enum Planet: Int
 }
 ```
 
-Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3. <br><br>
+Definimos Mercúrio como planeta 1, e todos abaixo seguem a sequência, então agora para acessarmos Terra, utilizamos o inteiro 3. <br><br><br>
 
-## Operadores e condições:
+## OPERADORES E CONDIÇÕES:
 
 - ### **TERNARY OPERATORS**
 
