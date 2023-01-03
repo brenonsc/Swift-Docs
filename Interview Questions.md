@@ -87,7 +87,7 @@ print(cachorro1.nome) // Bombom
 print(cachorro2.nome) // Pituca
 ```
 
-Já se for uma classe, teremos os dois atributos com o exato mesmo valor que gostaríamos de ter alterado apenas para o primeiro objeto.
+Já se for uma classe, teremos os dois atributos com o exato mesmo valor que gostaríamos de ter alterado apenas para o primeiro objeto. <br>
 
 **Código:**
 
