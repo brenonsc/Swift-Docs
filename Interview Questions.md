@@ -124,5 +124,4 @@ View Lifecycle é basicamente o que o próprio nome diz, o ciclo de vida de uma 
 
 ![](https://miro.medium.com/max/1400/1*jb1Y17gwQCRi2XCKy7_QHQ.png)
 
-<br><br>
-
+<br><br><br>
