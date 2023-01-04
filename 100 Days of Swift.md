@@ -195,5 +195,4 @@ switch score
 }
 ```
 
-Nesse código, podemos ver os dois casos. No primeiro, é printado "You failed badly." se a *score* for entre 0 e 49, "You did OK.", se o número for entre 50 e 84 (nota-se que o 85 não entra no alcance devido ao operador) e "You did great!", que é o caso de ser maior que 84, o que seria o resultado do código cima se executado. <br><br>
-
+Nesse código, podemos ver os dois casos. No primeiro, é printado "You failed badly." se a *score* for entre 0 e 49, "You did OK.", se o número for entre 50 e 84 (nota-se que o 85 não entra no alcance devido ao operador) e "You did great!", que é o caso de ser maior que 84, o que seria o resultado do código cima se executado. <br><br><br>
