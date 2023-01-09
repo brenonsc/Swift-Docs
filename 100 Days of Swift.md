@@ -233,7 +233,7 @@ No Swift, o `break`é utilizado para encerrarmos a execução de um loop, mas ca
 ```swift
 for i in 1...10 
 {
-    if i % 2 == 1 
+    if i % 2 == 1
   	{
         continue
     }
