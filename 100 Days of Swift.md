@@ -244,3 +244,5 @@ for i in 1...10
 
 No caso desse `loop`, percorremos os números de 1 a 10, e caso os mesmos sejam *ímpares*, eles são pulados, dessa forma, só é exibido na tela os números *pares* da sequência.<br><br>
 
+
+
