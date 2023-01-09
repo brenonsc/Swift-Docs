@@ -2,7 +2,7 @@
 
 Nesse documento será armazenado os conhecimentos adquiridos no site Hacking with Swift, no proposto desafio, disponível em: https://www.hackingwithswift.com/100
 
-Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição básica de variáveis, ou uso de ifs, loops, etc. <br><br>
+Obs: Aqui abordarei mais casos de uso mais incomuns, não incluindo por exemplo definição ou uso básico de variáveis, ifs, loops, etc. <br><br>
 
 ## TIPOS COMPLEXOS:
 
@@ -195,4 +195,52 @@ switch score
 }
 ```
 
-Nesse código, podemos ver os dois casos. No primeiro, é printado "You failed badly." se a *score* for entre 0 e 49, "You did OK.", se o número for entre 50 e 84 (nota-se que o 85 não entra no alcance devido ao operador) e "You did great!", que é o caso de ser maior que 84, o que seria o resultado do código cima se executado. <br><br><br>
+Nesse código, podemos ver os dois casos. No primeiro, é printado "You failed badly." se a *score* for entre 0 e 49, "You did OK.", se o número for entre 50 e 84 (nota-se que o 85 não entra no alcance devido ao operador) e "You did great!", que é o caso de ser maior que 84, o que seria o resultado do código cima se executado. <br><br>
+
+## LOOPING:
+
+- ### **EXITING MULTIPLE LOOPS**
+
+Em casos onde são colocados um loop dentro do outro, também é possível usar um `break`, mas isso faz com que o algoritmo saia do loop em questão. Então, caso queiramos que o código saia dos dois loops simultaneamente, utilizamos o comando `outerLoop`.
+
+**Sintaxe:**
+
+```swift
+outerLoop: for i in 1...10 
+{
+  for j in 1...10 
+  {
+    let product = i * j
+    print ("\(i) * \(j) is \(product)")
+
+    if product == 50 
+    {
+      print("It's a bullseye!")
+      break outerLoop
+    }
+  }
+}
+```
+
+Como é possível notar, indicamos para o Swift qual é o `outerLoop`(inclusive, podemos dar o nome que quisermos a ele) no primeiro  `for`, e então, no momento em que atingimos o valor 50 na variável `product` dentro do segundo loop, encerramos a execução de ambos. Caso usássemos somente o `break`, a execução retornaria para o primeiro loop.<br><br>
+
+- ### SKIPPING ITEMS
+
+No Swift, o `break`é utilizado para encerrarmos a execução de um loop, mas caso seja necessário pular um item, utilizamos o `continue`.
+
+**Sintaxe:**
+
+```swift
+for i in 1...10 
+{
+    if i % 2 == 1 
+  	{
+        continue
+    }
+
+    print(i)
+}
+```
+
+No caso desse `loop`, percorremos os números de 1 a 10, e caso os mesmos sejam *ímpares*, eles são pulados, dessa forma, só é exibido na tela os números *pares* da sequência.<br><br>
+
