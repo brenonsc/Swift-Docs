@@ -244,5 +244,26 @@ for i in 1...10
 
 No caso desse `loop`, percorremos os números de 1 a 10, e caso os mesmos sejam *ímpares*, eles são pulados, dessa forma, só é exibido na tela os números *pares* da sequência.<br><br>
 
+## FUNCTIONS:
 
+- ### OMITTING PARAMETER LABELS
+
+É possível, ao chamar uma função, omitir os nomes de parâmetros dela, para que não seja necessário escrever todas as vezes que realizar a chamada.
+
+**Sintaxe:**
+
+```swift
+func greet(_ person: String) 
+{
+    print("Hello, \(person)!")
+}
+```
+
+Como demonstrado, é utilizado o *underscore* ou `_`, para omitir o `person` ao realizar a chamada da função, ficando assim:
+
+```swift
+greet("Taylor")
+```
+
+Caso não houvesse o `_`, teria que ser escrito: `greet(person: "Taylor")`<br><br>
 
