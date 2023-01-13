@@ -266,4 +266,3 @@ greet("Taylor")
 ```
 
 Caso não houvesse o `_`, teria que ser escrito: `greet(person: "Taylor")`<br><br>
-
