@@ -296,3 +296,27 @@ greet("Taylor", nicely: false)
 
 Assim, é possível chamarmos a função dessas duas formas. <br><br>
 
+- ### VARIADIC FUNCIOTIONS
+
+No Swift, é possível criarmos funções que permitem um número infinito de parâmetros, assim como funciona a própria *String* dentro do sistema, transformando a variável em um *array* da mesma.
+
+**Sintaxe:**
+
+```swift
+func square(numbers: Int...) 
+{
+    for number in numbers 
+  	{
+        print("\(number) squared is \(number * number)")
+    }
+}
+```
+
+Como pode ser observado, para transformarmos um parâmetro em infinito, utilizamos o `...`, e podemos chamar logo após a função dessa forma:
+
+```swift
+square(numbers: 1, 2, 3, 4, 5)
+```
+
+Assim, obteremos como resultado os quadrados de 1 a 5. <br><br>
+
