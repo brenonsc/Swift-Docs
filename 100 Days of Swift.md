@@ -266,3 +266,33 @@ greet("Taylor")
 ```
 
 Caso não houvesse o `_`, teria que ser escrito: `greet(person: "Taylor")`<br><br>
+
+- ### DEFAULT PARAMETERS
+
+Ao criar uma função, podemos definir um parâmetro padrão para a mesma.
+
+**Sintaxe:**
+
+```swift
+func greet(_ person: String, nicely: Bool = true) 
+{
+    if nicely == true 
+  	{
+        print("Hello, \(person)!")
+    } 
+  	else 
+  	{
+        print("Oh no, it's \(person) again...")
+    }
+}
+```
+
+Aqui, como exemplo, criamos uma função que necessita receber como parâmetro uma *String* com um nome, e tem como parâmetro padrão uma variável *booleana*, que caso não seja alterada na chamada, sempre será considerada como *true*.
+
+```swift
+greet("Taylor")
+greet("Taylor", nicely: false)
+```
+
+Assim, é possível chamarmos a função dessas duas formas. <br><br>
+
