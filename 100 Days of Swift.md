@@ -319,4 +319,3 @@ square(numbers: 1, 2, 3, 4, 5)
 ```
 
 Assim, obteremos como resultado os quadrados de 1 a 5. <br><br>
-
