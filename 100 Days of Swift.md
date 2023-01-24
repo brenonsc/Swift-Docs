@@ -296,7 +296,7 @@ greet("Taylor", nicely: false)
 
 Assim, é possível chamarmos a função dessas duas formas. <br><br>
 
-- ### VARIADIC FUNCIOTIONS
+- ### VARIADIC FUNCTIONS
 
 No Swift, é possível criarmos funções que permitem um número infinito de parâmetros, assim como funciona a própria *String* dentro do sistema, transformando a variável em um *array* da mesma.
 
